@@ -1,12 +1,21 @@
 var themeBtn = document.querySelector("#themeDark");
-themeBtn.addEventListener("click",() =>{
-    document.body.classList.add("darkTheme");
 
+themeBtn.addEventListener("click", () => {
     if(document.body.classList.contains("darkTheme")){
-        themeBtn.src = 'images/sun.svg';
+        lightTheme();
+        themeBtn.src = "images/moon.svg";
     }
     else{
-        themeBtn.src = 'images/moon.svg';
+        darkTheme();
+        themeBtn.src = "images/sun.svg";
     }
 
-})
+});
+
+const lightTheme = () => {
+    document.body.classList.remove("darkTheme");
+};
+
+const darkTheme = () => {
+      document.body.classList.add("darkTheme");
+  };
