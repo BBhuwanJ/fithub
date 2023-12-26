@@ -1,0 +1,97 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    ---primaryColor: #F3F3FD;
+    ---secondaryColor: black;
+    ---btncolor: white;
+}
+
+.darkTheme{
+    ---primaryColor: black;
+    ---secondaryColor: white;
+    ---btncolor: white;
+}
+
+html body {
+    height: 100%;
+    width: 100%;
+    background-color: var(---primaryColor);
+    font-family:'Inter', sans-serif;;
+}
+nav{
+    padding: 4vh 0 0 0 ;
+    display: flex;
+    align-items: center; 
+    height: 11vh;
+    /* border: 2px solid black; */
+    flex-direction: row;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* border: 2px solid red; */
+    height: 11vh;
+    width: 21vw;
+}
+.logo img{
+    width: 15vw;
+    cursor: pointer;
+}
+.navList{
+    padding: 0 75px;
+    /* border: 2px solid blue; */
+    height: 11vh;
+    width: 51vw;
+    display: flex;
+    gap: 55px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navList li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(---secondaryColor);
+    cursor: pointer;
+
+}
+.loginReg{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 13px;
+    gap: 10px;
+    width: 24vw;
+    height: 11vh;
+}
+.loginReg button{
+    background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
+    padding: 6px 17px;
+    font-weight: 500;
+    color: var(---btncolor);
+    border-radius: 6px;
+    border: none;
+    font-size: 1.7vw;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+
+}
+.theme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.theme img{
+    cursor: pointer;
+}
