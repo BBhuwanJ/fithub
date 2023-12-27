@@ -127,8 +127,12 @@ nav {
     align-items: center;
     float: right;
     width: 60vw;
-    gap: 5px;
+    gap: 10px;
     display: none;
+    background-color: #d0d0f2;
+    border-radius: 15px;
+    backdrop-filter: blur(30px);
+
 }
 
 .dropDown li {
@@ -153,12 +157,12 @@ nav {
 
 .dropDown button {
     background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
-    padding: 6px 17px;
+    padding: 9px 17px;
     font-weight: 500;
     color: var(---btncolor);
     border-radius: 6px;
     border: none;
-    font-size: 1.7vw;
+    font-size: 1.9vw;
     cursor: pointer;
     overflow: hidden;
     text-align: center;
