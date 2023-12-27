@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main>
+    <header>
         <nav>
             <div class="logo"><img src="images/logo.png" alt="" srcset=""></div>
-            <ul class="navList">
+            <ul class="navList hideOnMobile">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Blog</li>
             </ul>
-            <div class="loginReg">
-                <button>Login</button>
+            <div class="loginReg hideOnMobile">
+                <button>LogIn</button>
                 <button>Register</button>
             </div>
-            <div class="theme">
-                <img src="images/moon.svg" id="themeDark">
+            <div class="theme hideOnMobile">
+                <img src="images/moon.svg" class="themeDark">
+            </div>
+            <div class="dropMenuBars hideOnScreen">
+                <img src="images/menu.svg" alt="" id="dropMenuIcon">
             </div>
         </nav>
-    </main>
+        <div class="dropDown">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Blog</li>
+            <button>LogIn</button>
+            <button>Register</button>
+            <div>
+                <img src="images/moon.svg" class="themeDark">
+            </div>
+        </div>
+    </header>
     <script src="script.js"></script>
 </body>
+
 </html>
