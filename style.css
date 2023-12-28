@@ -68,9 +68,30 @@ nav {
     list-style: none;
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(---secondaryColor);
     cursor: pointer;
+    text-decoration: none;
+    color: var(---secondaryColor);
 
+}
+
+.navList li a {
+    text-decoration: none;
+    color: var(---secondaryColor);
+    position: relative;
+}
+
+.navList a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #1678F2;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: all 0.5s;
+}
+.navList a:hover::after{
+    width:100%;
 }
 
 .loginReg {
@@ -86,7 +107,8 @@ nav {
     height: 67px;
 }
 
-.loginReg button {
+.loginReg button,
+.getStarted {
     background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
     padding: 6px 17px;
     font-weight: 500;
@@ -116,7 +138,7 @@ nav {
 }
 
 .dropDown {
-
+    padding: 25px 0;
     position: absolute;
     right: 0px;
     max-width: 255px;
@@ -144,7 +166,11 @@ nav {
     color: var(---secondaryColor);
     cursor: pointer;
     list-style: none;
+}
 
+.dropDown li a {
+    text-decoration: none;
+    color: var(---secondaryColor);
 }
 
 .open {
@@ -172,6 +198,64 @@ nav {
 .dropMenuBars {
     max-width: 90vw;
     float: right;
+}
+
+.mainContainer {
+    /* border: 2px solid red; */
+    height: calc(100vh - 87px);
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.mainContentBox {
+    width: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+
+
+}
+
+.mainContent {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(2rem, 3rem, 4rem);
+    text-align: center;
+    font-weight: 500;
+    overflow: hidden;
+    color: var(---secondaryColor);
+}
+
+.mainContainer p:first-child {
+    color: #1678F2;
+}
+
+.mainPicture {
+    padding-top: 55px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.mainPicture img {
+    width: 70%;
+}
+
+.getStarted {
+    margin-top: 19px;
+    width: 205px;
+    font-size: 1.7rem;
+
 }
 
 @media (max-width: 800px) {
