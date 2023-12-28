@@ -152,7 +152,7 @@ nav {
     width: 60vw;
     gap: 10px;
     display: none;
-    background-color: #d0d0f2;
+    backdrop-filter: blur(20px);
     border-radius: 15px;
     backdrop-filter: blur(30px);
 
