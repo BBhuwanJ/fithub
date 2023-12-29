@@ -118,7 +118,6 @@ nav {
     border: none;
     font-size: 1.7vw;
     cursor: pointer;
-    overflow: hidden;
     text-align: center;
 
 }
@@ -154,7 +153,6 @@ nav {
     display: none;
     backdrop-filter: blur(20px);
     border-radius: 15px;
-    backdrop-filter: blur(30px);
 
 }
 
@@ -259,6 +257,74 @@ nav {
 
 }
 
+.featuresBox {
+    padding-top: 3vh;
+    padding-left: 8vw;
+    padding-right: 6vw;
+    margin-top: 10vh;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 100px;
+}
+
+.featureContent {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.bmi {
+    /* border: 2px solid red; */
+    overflow: hidden;
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dietAdvice {
+    /* border: 2px solid red; */
+    max-width: 20vw;
+
+}
+
+.dailyProgress {
+    /* border: 2px solid red; */
+    max-width: 25vw;
+}
+
+.workout {
+    /* border: 2px solid red; */
+    max-width: 49vw;
+}
+
+.featureWeProvide {
+    font-size: 1.7rem;
+    color: #1678F2;
+    font-weight: 600;
+
+}
+
+.bmi .bmiTitle span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(---secondaryColor);
+}
+
+.featureTitle {
+    padding-bottom: 5px;
+    font-size: 1.3rem;
+    color: var(---secondaryColor);
+    font-weight: 600;
+}
+
+.featureDescription {
+    color: #8A8585;
+    font-size: 0.9rem;
+}
+
 @media (max-width: 800px) {
     .hideOnMobile {
         display: none;
@@ -299,5 +365,23 @@ nav {
     .mainPicture img {
         width: 90%;
         padding-top: 10px;
+    }
+
+    .featuresBox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .featureContent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 19px; */
+    }
+
+    .featureContent div {
+        min-width: 70vw;
     }
 }
