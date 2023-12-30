@@ -8,22 +8,22 @@ let contactIcons = document.querySelectorAll(".contactImg")
 themeBtn[0].addEventListener("click", () => {
   if (document.body.classList.contains("darkTheme")) {
     lightTheme();
-    themeBtn[0].src = "images/moon.svg";
-    themeBtn[1].src = "images/moon.svg";
+    themeBtn[0].src = "assets/moon.svg";
+    themeBtn[1].src = "assets/moon.svg";
   } else {
     darkTheme();
-    themeBtn[0].src = "images/sun.svg";
-    themeBtn[1].src = "images/sun.svg";
+    themeBtn[0].src = "assets/sun.svg";
+    themeBtn[1].src = "assets/sun.svg";
   }
 });
 
 themeBtn[1].addEventListener("click", () => {
   if (document.body.classList.contains("darkTheme")) {
     lightTheme();
-    themeBtn[1].src = "images/moon.svg";
+    themeBtn[1].src = "assets/moon.svg";
   } else {
     darkTheme();
-    themeBtn[1].src = "images/sun.svg";
+    themeBtn[1].src = "assets/sun.svg";
   }
 });
 
@@ -50,8 +50,8 @@ const darkTheme = () => {
 dropMenuBars.addEventListener("click", () => {
   dropDown.classList.toggle("open");
   if (dropDown.classList.contains("open")) {
-    dropMenuIcon.src = "images/close.svg";
+    dropMenuIcon.src = "assets/close.svg";
   } else {
-    dropMenuIcon.src = "images/menu.svg";
+    dropMenuIcon.src = "assets/menu.svg";
   }
 });
