@@ -2,6 +2,8 @@ let themeBtn = document.querySelectorAll(".themeDark");
 let dropMenuBars = document.querySelector(".dropMenuBars");
 let dropDown = document.querySelector(".dropDown");
 let dropMenuIcon = document.getElementById("dropMenuIcon");
+let socialIcons = document.querySelector(".socials")
+let contactIcons = document.querySelectorAll(".contactImg")
 
 themeBtn[0].addEventListener("click", () => {
   if (document.body.classList.contains("darkTheme")) {
@@ -28,11 +30,21 @@ themeBtn[1].addEventListener("click", () => {
 const lightTheme = () => {
   document.body.classList.remove("darkTheme");
   document.getElementById("dropMenuIcon").style.filter = "none";
+  socialIcons.style.filter = "none";
+  contactIcons.forEach(icon => {
+    icon.style.filter = "none";
+    
+  });
 };
 
 const darkTheme = () => {
   document.body.classList.add("darkTheme");
   document.getElementById("dropMenuIcon").style.filter = "invert(100%)";
+  socialIcons.style.filter = "invert()";
+  contactIcons.forEach(icon => {
+    icon.style.filter = "invert()";
+    
+  })
 };
 
 dropMenuBars.addEventListener("click", () => {
