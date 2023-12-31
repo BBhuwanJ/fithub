@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | FitHub</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="assets/logo.png" alt="" srcset=""></div>
+            <ul class="navList hideOnMobile">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="loginReg hideOnMobile">
+                <a href="login.html"><button>Login</button></a>
+            </div>
+            <div class="theme hideOnMobile">
+                <img src="assets/moon.svg" class="themeDark">
+            </div>
+            <div class="dropMenuBars hideOnScreen">
+                <img src="assets/menu.svg" alt="" id="dropMenuIcon">
+            </div>
+        </nav>
+        <div class="dropDown">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <a href="login.html" class="dropDownBtn"><button>Login</button></a>
+
+            <div>
+                <img src="assets/moon.svg" class="themeDark">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainContentBox">
+            <p>Welcome to FitHub</p>
+            <div class="registerForm">
+                <input type="email" name="" id="email" placeholder="Enter Email">
+                <input type="password" id="password" placeholder="Enter Password">
+                <input type="number" id="age" placeholder="Age">
+                <select id="gender">
+                    <option value="Gender" selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <input type="number" id="height" placeholder="Height">
+                <input type="number" id="Weight" placeholder="Weight">
+            </div>
+            <div class="registerHere">
+                <p>Already have an account, <a href="login.html"><span>Login Here</span></a></p>
+            </div>
+            <div class="register">
+                <button type="submit">Register</button>
+            </div>
+            <div class="seperation">
+                <div class="line"></div>
+                <p>or continue with</p>
+                <div class="line"></div>
+            </div>
+            <div class="loginOptions">
+                <img src="assets/socials/GoogleBox.svg" alt="">
+                <img src="assets/socials/AppleBox.svg" alt="">
+                <img src="assets/socials/FacebookBox.svg" alt="">
+            </div>
+
+        </div>
+
+    </main>
+    <script src="login.js"></script>
+</body>
+
+</html>
