@@ -228,7 +228,7 @@ main {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    row-gap: 18px;
+    row-gap: 23px;
     backdrop-filter: blur(10px);
     background-color: transparent;
     overflow: hidden;
@@ -255,7 +255,7 @@ main {
 
 .registerForm input {
     background-color: #EAF0F7;
-    padding: 5px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     font-size: 0.8rem;
