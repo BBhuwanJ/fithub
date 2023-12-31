@@ -182,7 +182,11 @@ nav {
     display: none;
 }
 
-.dropDown button {
+.dropDownBtn {
+    width: 100%;
+}
+
+.dropDownBtn button {
     background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
     padding: 9px 17px;
     font-weight: 500;
@@ -350,6 +354,7 @@ nav {
     max-width: 20vw;
     overflow: hidden;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .blog p {
@@ -474,6 +479,7 @@ footer {
     flex-direction: column;
     gap: 13px;
     color: var(---secondaryColor);
+    cursor: pointer;
     /* border: 2px solid black; */
 }
 
