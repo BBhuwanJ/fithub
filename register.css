@@ -182,10 +182,11 @@ nav {
     display: none;
 }
 
-.dropDownBtn{
+.dropDownBtn {
     width: 100%;
 }
-.dropDownBtn button{
+
+.dropDownBtn button {
     background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
     padding: 9px 17px;
     font-weight: 500;
@@ -199,7 +200,7 @@ nav {
     width: 100%;
 }
 
-    
+
 
 .dropMenuBars {
     max-width: 90vw;
@@ -239,7 +240,7 @@ main {
     margin-top: 10px;
     font-size: max(2vw, 100%);
     font-weight: 600;
- 
+
 }
 
 .registerForm {
@@ -248,8 +249,8 @@ main {
     gap: 13px;
     /* border: 2px solid red; */
     display: grid;
-    grid-template-columns: 50% 50% ;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .registerForm input {
@@ -258,22 +259,26 @@ main {
     border: none;
     border-radius: 5px;
     font-size: 0.8rem;
-    
+
 }
-.registerForm #email{
+
+.registerForm #email {
     width: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
 }
-#age{
+
+#age {
     grid-column: 1/1;
 }
-#password{
+
+#password {
     width: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
 }
-#gender{
+
+#gender {
     background-color: #EAF0F7;
     color: rgb(113, 112, 112);
     border: none;
