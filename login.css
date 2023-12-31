@@ -139,6 +139,7 @@ nav {
 }
 
 .dropDown {
+    z-index: 10;
     padding: 25px 0;
     position: absolute;
     right: 0px;
@@ -181,7 +182,11 @@ nav {
     display: none;
 }
 
-.dropDown button {
+.dropDownBtn {
+    width: 100%;
+}
+
+.dropDownBtn button {
     background: linear-gradient(90deg, #3A8EF6 0%, #6F3AFA 95.69%);
     padding: 9px 17px;
     font-weight: 500;
@@ -195,6 +200,8 @@ nav {
     width: 100%;
 }
 
+
+
 .dropMenuBars {
     max-width: 90vw;
     float: right;
@@ -202,38 +209,43 @@ nav {
 
 main {
     /* border: 2px solid black; */
-    height: calc(100vh - 130px);
+    /* height: calc(100vh - 130px); */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 55px;
+    color: var(---secondaryColor);
 
 }
 
 .mainContentBox {
-    padding: 15px;
     border: 1px solid #bfbfc2;
-    box-shadow: 0px 0px 5px 1px;
+    box-shadow: 0px 0px 5px 2.5px;
     border-radius: 9px;
-    width: 22vw;
-    height: 56vh;
+    width: min(27%, 22vw);
     display: flex;
+    height: auto;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
     backdrop-filter: blur(10px);
     background-color: transparent;
+    overflow: hidden;
+    padding: 15px;
 
 }
 
 .mainContentBox>p {
-    font-size: 1.7rem;
+    margin-top: 10px;
+    font-size: max(2.4vw, 110%);
     font-weight: 600;
+
 }
 
 .loginForm {
     width: 100%;
-    gap: 8px;
+    gap: 14px;
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
@@ -241,15 +253,16 @@ main {
 
 .loginForm input {
     color: var(---secondaryColor);
-    padding: 7px;
+    padding: 10px;
     border: none;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
 .registerHere {
     /* text-align: center; */
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 
 }
 
@@ -270,7 +283,8 @@ main {
     border-radius: 4px;
     border: none;
     background-color: #4461F2;
-    color: var(---thirdColor);
+    color: white;
+    font-weight: 500;
 }
 
 .seperation p {
@@ -300,6 +314,7 @@ main {
     justify-content: center;
     gap: 5px;
     width: 100%;
+    width: min(100%, 50vh);
 }
 
 .loginOptions img {
