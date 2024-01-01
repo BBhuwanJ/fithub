@@ -346,6 +346,10 @@ footer {
         justify-content: space-between;
         padding: 0px 25px;
     }
+    .dropMenuBars {
+        max-width: 90vw;
+        display: block;
+    }
     .footerBox {
         gap: 2px;
         flex-direction: column;
