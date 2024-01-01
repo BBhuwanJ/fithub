@@ -7,15 +7,14 @@
     <title>Register | FitHub</title>
     <link rel="stylesheet" href="register.css">
 </head>
-
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="assets/logo.png" alt="" srcset=""></div>
+            <div class="logo"><a href="index.html"><img src="assets/logo.png" alt="" srcset=""></a></div>
             <ul class="navList hideOnMobile">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
             </ul>
             <div class="loginReg hideOnMobile">
                 <a href="login.html"><button>Login</button></a>
@@ -29,8 +28,8 @@
         </nav>
         <div class="dropDown">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
             <a href="login.html" class="dropDownBtn"><button>Login</button></a>
 
             <div>
@@ -38,8 +37,13 @@
             </div>
         </div>
     </header>
-
+    <div class="gradiant">
+        <img src="assets/Ellipse.svg" alt="" srcset="">
+        <img src="assets/Ellipse.svg" alt="" srcset="">
+        <img src="assets/Ellipse.svg" alt="" srcset="">
+    </div>
     <main>
+        
         <div class="mainContentBox">
             <p>Welcome to FitHub</p>
             <div class="registerForm">
@@ -51,8 +55,8 @@
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
-                <input type="number" id="height" placeholder="Height">
-                <input type="number" id="Weight" placeholder="Weight">
+                <input type="number" id="height" placeholder="Height (ft.in)">
+                <input type="number" id="Weight" placeholder="Weight (kg)">
             </div>
             <div class="registerHere">
                 <p>Already have an account, <a href="login.html"><span>Login Here</span></a></p>
