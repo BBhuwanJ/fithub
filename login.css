@@ -36,7 +36,7 @@ nav {
 }
 
 .logo {
-
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -46,6 +46,7 @@ nav {
 }
 
 .logo img {
+    z-index: 100;
     width: 215px;
     cursor: pointer;
     overflow: hidden;
@@ -217,7 +218,33 @@ main {
     color: var(---secondaryColor);
 
 }
-
+.gradiant img{
+    position: absolute;
+}
+.gradiant img:first-child{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: -20px;;
+    width: 35vw;
+    height: 90vh;
+}
+.gradiant img:nth-child(3)
+{
+    position: absolute;
+    width: 35vw;
+    /* border: 2px solid red; */
+    top:40%;
+    height: 60vh;
+}
+.gradiant img:nth-child(2)
+{
+    position: absolute;
+    width: 35vw;
+    /* border: 2px solid red; */
+    right: 0;
+    bottom:0;
+    height: 50vh;
+}
 .mainContentBox {
     border: 1px solid #bfbfc2;
     box-shadow: 0px 0px 5px 2.5px;
@@ -256,7 +283,7 @@ main {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .registerHere {
