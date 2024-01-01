@@ -14,11 +14,11 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="assets/logo.png" alt="" srcset=""></div>
+            <div class="logo"><a href="index.html"><img src="assets/logo.png" alt="" srcset=""></a></div>
             <ul class="navList hideOnMobile">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about-us.html" class="navBtn">About Us</a></li>
+                <li><a href="blogs.html" class=" navBtn">Blogs</a></li>
             </ul>
             <div class="loginReg hideOnMobile">
                 <a href="login.html"><button>Login</button></a>
@@ -33,8 +33,8 @@
         </nav>
         <div class="dropDown">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
             <a href="login.html" class="dropDownBtn"><button>Login</button></a>
             <a href="register.html" class="dropDownBtn"><button>Register</button></a>
             <div>
@@ -42,13 +42,16 @@
             </div>
         </div>
     </header>
+    <div class="gradiant">
+        <img src="assets/Ellipse.svg" alt="" srcset="">
+    </div>
     <main>
         <div class="mainContainer">
             <div class="mainContentBox">
                 <div class="mainContent">
                     <p>One Stop Solution</p>
                     <p>for your wellness.</p>
-                    <button class="getStarted">Get Started</button>
+                    <a href="register.html"><button class="getStarted">Get Started</button></a>
                 </div>
             </div>
             <div class="mainPicture">
