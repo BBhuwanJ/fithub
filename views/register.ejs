@@ -1,0 +1,49 @@
+<% include ./partials/header.ejs %>
+    <main>
+        <div class="gradiant">
+            <img src="images/Ellipse.svg" alt="" srcset="">
+            <img src="images/Ellipse.svg" alt="" srcset="">
+        </div>
+
+        <div class="registerMainContentBox">
+            <p>Welcome to FitHub</p>
+            <form action="/register" method="post">
+                <div class="registerForm">
+                    <input type="text" name="username" placeholder="Full Name" id="fullName">
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                    <input type="number" id="age" name="age" placeholder="Age">
+                    <select id="gender" name="gender">
+                        <option value="Gender" selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <input type="number" name="height" id="height" placeholder="Height (ft.in)">
+                    <input type="number" name="weight" id="Weight" placeholder="Weight (kg)">
+                </div>
+                <div class="registerHere">
+                    <p>Already have an account, <a href="/login"><span>Login Here</span></a></p>
+                </div>
+                <div class="register">
+                    <input type="submit" value="Register">
+                </div>
+                <div class="seperation">
+                    <div class="line"></div>
+                    <p>or continue with</p>
+                    <div class="line"></div>
+                </div>
+                <div class="loginOptions">
+                    <img src="images/socials/GoogleBox.svg" alt="">
+                    <img src="images/socials/AppleBox.svg" alt="">
+                    <img src="images/socials/FacebookBox.svg" alt="">
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <script src="register.js"></script>
+    </body>
+
+    </html>
+
+    <% include ./partials/footer.ejs %>
