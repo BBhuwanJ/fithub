@@ -9,17 +9,18 @@
             <p>Welcome to FitHub</p>
             <form action="/register" method="post">
                 <div class="registerForm">
-                    <input type="text" name="username" placeholder="Full Name" id="fullName">
-                    <input type="email" name="email" id="email" placeholder="Enter Email">
-                    <input type="password" name="password" id="password" placeholder="Enter Password">
-                    <input type="number" id="age" name="age" placeholder="Age">
-                    <select id="gender" name="gender">
+                    <input type="text" name="username" id="email" placeholder="Enter Username" required>
+                    <input type="email" name="email" id="email" placeholder="Enter email" required>
+                    <input type="password" name="password" id="email" placeholder="Enter password" required>
+                    <input type="number" name="age" placeholder="Age" required>
+                    <select id="gender" name="gender" required>
                         <option value="Gender" selected>Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select>
-                    <input type="number" name="height" id="height" placeholder="Height (ft.in)">
-                    <input type="number" name="weight" id="Weight" placeholder="Weight (kg)">
+                    <input type="number" name="height" id="height" placeholder="Height (ft.in)" required step="0.01"
+                        min="0">
+                    <input type="number" name="weight" id="Weight" placeholder="Weight (kg)" required>
                 </div>
                 <div class="registerHere">
                     <p>Already have an account, <a href="/login"><span>Login Here</span></a></p>

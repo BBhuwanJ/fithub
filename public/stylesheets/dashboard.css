@@ -46,6 +46,12 @@ html body {
 
 }
 
+.subDashboard a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
 .logo {
     /* border: 2px solid red; */
     display: flex;
@@ -70,6 +76,7 @@ html body {
     flex-direction: column;
     min-width: max-content;
     /* border: 2px solid black; */
+
 }
 
 .branding p {
@@ -96,6 +103,7 @@ html body {
     gap: 7px;
     /* border: 2px solid red; */
     padding: 15px;
+    text-decoration: none;
 
 }
 
@@ -105,6 +113,7 @@ html body {
 
 .modules h2 {
     font-size: 0.9em;
+    text-decoration: none;
 }
 
 
@@ -157,7 +166,8 @@ html body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .userImage {
@@ -177,7 +187,7 @@ html body {
 
 main {
     width: 100vw;
-    
+
 }
 
 .mainContent {
@@ -187,11 +197,11 @@ main {
     border-radius: 15px;
     margin-left: 15px;
     padding-bottom: 5vh;
-    
+
 }
 
 .profileContent {
-    padding-left: 15px;
+    /* padding-left: 15px; */
     /* border: 2px solid red; */
     background-color: #d7d7ff;
     margin-top: 5px;
@@ -205,8 +215,10 @@ main {
 
 .profileContent .image {
     padding-top: 15px;
+    margin-left: -55px;
     /* border: 2px solid red; */
     height: 80vh;
+
 }
 
 .profileContent .image img {
@@ -362,6 +374,7 @@ main {
 
 .dropDownMenu .phoneLogo .branding p {
     font-size: 2rem;
+    text-decoration: none;
 }
 
 .dropDownMenu .phoneLogo .branding small {

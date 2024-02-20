@@ -4,122 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/titleIcon.png">
+    <link rel="icon" href="/images/titleIcon.png">
     <title>FitHub | Journey to your wellness.</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="blogs.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/about-us.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+
+
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="index.html"><img src="assets/logo.png" alt="" srcset=""></a></div>
+            <div class="logo"><a href="/"><img src="/images/logo.png" alt="" srcset=""></a></div>
             <ul class="navList hideOnMobile">
-                <li ><a href="index.html" class="navBtn">Home</a></li>
-                <li><a href="about-us.html" class="navBtn">About Us</a></li>
-                <li><a href="blogs.html" class="active">Blogs</a></li>
+                <li><a href="/" class="navBtn">Home</a></li>
+                <li><a href="/aboutus" class="active">About Us</a></li>
+                <li><a href="/blogs" class=" navBtn ">Blogs</a></li>
             </ul>
             <div class="loginReg hideOnMobile">
-                <a href="login.html"><button>Login</button></a>
-                <a href="register.html"><button>Register</button></a>
+                <a href="/login"><button>Login</button></a>
+                <a href="/register"><button>Register</button></a>
             </div>
             <div class="theme hideOnMobile">
-                <img src="assets/moon.svg" class="themeDark">
+                <img src="/images/moon.svg" class="themeDark">
             </div>
             <div class="dropMenuBars hideOnScreen">
-                <img src="assets/menu.svg" alt="" id="dropMenuIcon">
+                <img src="/images/menu.svg" alt="" id="dropMenuIcon">
             </div>
         </nav>
         <div class="dropDown">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <a href="login.html" class="dropDownBtn"><button>Login</button></a>
-            <a href="register.html" class="dropDownBtn"><button>Register</button></a>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/blogs">Blogs</a></li>
+            <a href="/login" class="dropDownBtn"><button>Login</button></a>
+            <a href="/register" class="dropDownBtn"><button>Register</button></a>
             <div>
-                <img src="assets/moon.svg" class="themeDark">
+                <img src="/images/moon.svg" class="themeDark">
             </div>
         </div>
     </header>
-    <main>
+    <main class="h-[55vh] w-full flex justify-center items-center">
+        <div class="hero font-semibold text-2xl"> Comming Soon...</div>
 
     </main>
-    <footer>
-        <div class="footerContent">
-            <div class="footerBox">
-                <div class="footerLogo">
-                    <div class="branding">
-                        <img src="assets/titleIcon.png" width="95px" alt="">
-                        <p>FitHub</p>
-                        <small>journey to your wellness...</small>
-                    </div>
-                    <div class="socials">
 
-                        <a href="https://www.facebook.com/bbhuwan.joshi.07" target="_blank"><img
-                                src="assets/socials/facebook.svg" alt=""></a>
-                        <a href="https://www.instagram.com/acharya8560" target="_blank"><img
-                                src="assets/socials/instagram.svg" alt=""></a>
-                        <a href="https://twitter.com/Partime_Thinker" target="_blank"><img src="assets/socials/x.svg"
-                                alt=""></a>
-                        <a href="https://www.linkedin.com/in/bbhuwanjoshi/" target="_blank"><img
-                                src="assets/socials/linkedin.svg" alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCQXzLraalu2_IMg9rrMccbA" target="_blank"><img
-                                src="assets/socials/youtube.svg" alt=""></a>
-                    </div>
-
-                </div>
-                <div class="footerInfo">
-                    <div class="aboutProducts footerSection">
-                        <p class="footerHeading">Product</p>
-                        <ul class="footerLists">
-                            <li>Features</li>
-                            <li>Pricing</li>
-                            <li>Reviews</li>
-                        </ul>
-                    </div>
-                    <div class="aboutCompany footerSection">
-                        <p class="footerHeading">Company</p>
-                        <ul class="footerLists">
-                            <li>About</li>
-                            <li>Contact Us</li>
-                            <li>Blog</li>
-                        </ul>
-                    </div>
-                    <div class="aboutSupport footerSection">
-                        <p class="footerHeading">Support</p>
-                        <ul class="footerLists">
-                            <li>Getting Started</li>
-                            <li>Help Center</li>
-                        </ul>
-                    </div>
-                    <div class="aboutContact footerSection">
-                        <p class="footerHeading">Contact Us</p>
-                        <div class="contactList">
-                            <div class="email">
-                                <img src="assets/socials/email.svg" width="12px" class="contactImg">
-                                <span>bbhuwanjoshi21@gmail.com</span>
-                            </div>
-                            <div class="phone">
-                                <img src="assets/socials/phone.svg" width="12px alt="" class=" contactImg">
-                                <span>+977 9866536757</span>
-                            </div>
-                            <div class=" location">
-                                <img src="assets/socials/location.svg" width="12px alt="" class=" contactImg">
-                                <span>Sanepa-2, Lalitpur, Nepal</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=" seperationLine"></div>
-        <div class="copyright">
-            <p>Copyright &copy; 2023 | All Right Reserved</p>
-        </div>
-    </footer>
-    <script src="blogs.js"></script>
-</body>
-
-</html>
+    <% include ./partials/footer.ejs %>

@@ -2,6 +2,7 @@ var dropDownBars = document.querySelector(".dropDownBarsIcon");
 var dropDownMenu = document.querySelector(".dropDownMenu");
 var mainContent = document.querySelector(".mainContent");
 var profile = document.querySelector(".profile");
+var gender = document.querySelector(".gender").innerText;
 
 dropDownBars.addEventListener("click", () => {
   dropDownMenu.classList.toggle("open");
@@ -15,31 +16,10 @@ dropDownBars.addEventListener("click", () => {
   }
 });
 
-function openDashboard(dashboard) {
-    var mainContent = document.querySelector(".mainContent");
-    switch (dashboard) {
-        case 'profile':
-            mainContent.innerHTML = '<h2>Profile Dashboard</h2><p>This is the Profile dashboard content.</p>';
-            changeUrl('/profile');
-            break;
-        case 'workout':
-            mainContent.innerHTML = '<h2>Workout Dashboard</h2><p>This is the Workout dashboard content.</p>';
-            changeUrl('/workout');
-            break;
-        case 'meditation':
-            mainContent.innerHTML = '<h2>Meditation Dashboard</h2><p>This is the Meditation dashboard content.</p>';
-            changeUrl('/meditation');
-            break;
-        case 'tracker':
-            mainContent.innerHTML = '<h2>Tracker Dashboard</h2><p>This is the Tracker dashboard content.</p>';
-            changeUrl('/tracker');
-            break;
-        default:
-            mainContent.innerHTML = '<p>Welcome to the Dashboard! Select an option from the sidebar.</p>';
-            changeUrl('/');
-    }
+if(gender == "male"){
+  document.querySelector(".humanImg").src = "/images/dashboardImages/male.png"
 }
-
-function changeUrl(path) {
-    history.pushState(null, null, path);
+else{
+  document.querySelector(".humanImg").src = "/images/dashboardImages/female.png"
 }
+console.log(gender);
